@@ -1,2 +1,2 @@
 # javascript-examples
-This repo will contain javascript examples.
+This repository contain javascript examples.
