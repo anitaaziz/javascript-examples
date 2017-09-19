@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>variable</title>
+</head>
+<body>
+<p id="sayHello"></p>
+<script>
+  var yourName =  prompt('What is your name?');
+
+  // if ( cross button was not clicked AND neither OK was clicked without entering value )
+  if(yourName !== null && yourName !== '') {
+    document.getElementById("sayHello").innerHTML = "Hello" + " " + yourName;
+  } else {
+    alert('Please enter your name');
+  }
+
+  var balance = 1563.878;
+  var payment = balance/12;
+  console.log('Monthly Payment is :' + ' ' + payment.toFixed(2)); //.toFixed(2) syntax will round it to 2 decimal places.
+
+  var num = 4;
+  console.log('num++ =', num++); // 4 .. num = 5
+  console.log('num', num); // 5 .. 5
+  console.log('num', num); // 5 .. 5
+  console.log('++num =', ++num); // num = 6.. 6
+  console.log('num', num); // 6
+  console.log('num += 5 = ', num += 5);
+  console.log('num *= 5 = ', num *= 5);
+  console.log('num /= 5 = ', num /= 5);
+</script>
+</body>
+</html>
